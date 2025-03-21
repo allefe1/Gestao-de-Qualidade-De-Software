@@ -4,5 +4,11 @@ caractere específico aparece em uma string.
  */
 
 function contarOcorrencias(str, char) {
-    return [...str].filter(c => c === char).length;
+    let contador = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
+            contador++;
+        }
+    }
+    return contador;
 }

@@ -4,5 +4,9 @@ retorne a soma de todos os elementos.
 Exemplo: somarArray([1, 2, 3, 4, 5]) deve retornar 15. */
 
 function somarArray(arr) {
-    return arr.reduce((soma, num) => soma + num, 0);
+    let soma = 0;
+    for (let i = 0; i < arr.length; i++) {
+        soma += arr[i];
+    }
+    return soma;
 }
